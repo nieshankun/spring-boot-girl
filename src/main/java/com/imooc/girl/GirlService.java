@@ -23,8 +23,12 @@ public class GirlService {
 
         Girl girlB = new Girl();
         girlB.setAge(19);
-        girlB.setCupSize("FUCK");
+        girlB.setCupSize("F");
         girlRepository.save(girlB);
 
+    }
+
+    public Girl getGirlById(int id){
+        return girlRepository.findOne(id);
     }
 }
